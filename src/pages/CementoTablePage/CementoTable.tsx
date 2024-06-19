@@ -1,5 +1,4 @@
 import React from 'react';
-import {Container} from './CementoTable.styles';
 import {TABLE_DATA_KEY, usePersistentState} from "../../hooks/usePersistentState";
 import Table from "../../components/Table/Table";
 
@@ -21,7 +20,7 @@ export const CementoTable = () => {
     }
 
     return (
-        <Container>
+        <div>
             <Table data={tableData}
                    setData={setTableData}
                    columnVisibilityData={visibleData}
@@ -29,6 +28,6 @@ export const CementoTable = () => {
                    resetData={resetData}
 
             />
-        </Container>
+        </div>
     );
 };
