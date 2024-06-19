@@ -72,7 +72,7 @@ export const StaledTable = styled.table`
   height: auto;
   display: grid;
   flex: 1;
-  padding: 0 10px 0 10px;
+  padding: 0 0 0 0;
 `
 export const StyledThead = styled.thead`
   display: grid;

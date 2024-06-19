@@ -8,7 +8,6 @@ export const TABLE_COLUMNS_KEY = 'columnsVisible';
 
 export const usePersistentState = (
     initialState: Person[],
-    key: string
 ): [
     Person[],
     Dispatch<SetStateAction<Person[]>>,
@@ -38,13 +37,13 @@ export const usePersistentState = (
                     setVisibleData(savedVisibilityData);
                 }
             } catch (error) {
-                console.error(`Error loading data from localforage with key ${key}:`, error);
+                console.error(`Error loading data from localforage`, error);
             } finally {
                 setIsLoading(false);
             }
         };
         fetchData();
-    }, [key]);
+    }, []);
 
     const updateData: Dispatch<SetStateAction<Person[]>> = (newData: SetStateAction<Person[]>) => {
         setData(prevData => {

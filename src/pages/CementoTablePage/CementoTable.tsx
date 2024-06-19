@@ -13,7 +13,7 @@ export const CementoTable = () => {
         updateVisibilityData,
         isLoading,
         resetData,
-    ] = usePersistentState([], TABLE_DATA_KEY);
+    ] = usePersistentState([]);
 
     if (isLoading) {
         return <div>Loading...</div>;
