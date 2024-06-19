@@ -10,7 +10,3 @@ export const Container = styled.div`
   //display: flex;
 `;
 
-const Heading = styled.h1`
-  font-size: 24px;
-  color: blue;
-`;
